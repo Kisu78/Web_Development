@@ -1,0 +1,58 @@
+<!-- <img> Tag -->
+<!-- The <img> tag is used to embed images into a webpage. -->
+<!-- It is a self-closing tag (no </img> needed). -->
+
+<!--| Attribute     | Description                                                                                  |
+| ------------- | -------------------------------------------------------------------------------------------- |
+| `src`         | Source of the image (file path or URL). **Required**.                                        |
+| `alt`         | Alternate text shown if image cannot load; also important for **SEO & accessibility**.       |
+| `width`       | Sets image width (in px or %).                                                               |
+| `height`      | Sets image height (in px or %).                                                              |
+| `title`       | Tooltip text shown when you hover on the image.                                              |
+| -->
+
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMLiEjfLMzOVXEm087UF_MUGzItzgshd4N8w&s" alt="This Is a Image" height="400px" width="500px" loading="lazy">
+<img src="./Front_End_Image1.png" alt="Front-end-Image" title="This is a FrontEnd img">
+
+<br>
+<!-- : Image Inside a Link -->
+<a href="https://www.w3schools.com/" target="_blank" >
+    <img src="./w3School_image.png" alt="W3School Image">
+</a>
+
+<!-- Image Maps (Clickable Areas on Image) -->
+<!-- Special case: divide an image into clickable regions. -->
+
+<img src="world-map.jpg" alt="World Map" usemap="#worldmap">
+
+<map name="worldmap">
+  <area shape="rect" coords="34,44,270,350" href="asia.html" alt="Asia">
+  <!-- coords="x1,y1,x2,y2" → Top-left and bottom-right corners. -->
+  <area shape="circle" coords="400,200,50" href="europe.html" alt="Europe">
+  <!-- coords="x,y,radius" → Center (x,y) and radius. -->
+  <area shape="poly" coords="120,160,200,220,300,210" href="africa.html" alt="Africa">
+  <!-- coords="x1,y1,x2,y2,x3,y3..." → Multiple connected points. -->
+</map>
+
+<!-- shape	Defines the shape of the clickable area: rect, circle, poly, default. -->
+<!-- coords	Coordinates of the shape (x, y values). -->
+
+
+<!-- Relative And Absolute Path -->
+<!-- Relative Path -->
+<!-- The file is located relative to your HTML file’s location (in the same project folder or nearby folders). -->
+<!-- <img src="./Front_End_Image1.png" alt="Front-end-Image" title="This is a FrontEnd img"> -->
+
+<!-- Absolute Path -->
+<!-- The full location of the file, either on your computer or the internet. -->
+<!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMLiEjfLMzOVXEm087UF_MUGzItzgshd4N8w&s" alt="This Is a Image" height="400px" width="500px"> -->
+<!-- Loads the image directly from the website  -->
+
+<!-- <img src="C:/Users/hp5cd/OneDrive/Pictures/Screenshots" alt="Flower"> -->
+<!-- Works only on your computer, not on others (bad practice). 
+     And if Your Browser Block this it also not work-->
+
+
+<!-- Use relative paths for project files (like images, CSS, JS inside your folder). -->
+<!-- Use absolute paths only when linking to external websites or CDNs. -->

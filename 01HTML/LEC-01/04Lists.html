@@ -1,0 +1,111 @@
+<!-- 📌Lists in HTML
+
+A list is a collection of related items grouped together.
+
+There are three main types of lists:
+
+Ordered List (<ol>)
+Unordered List (<ul>)
+Definition List (<dl>) -->
+
+
+<!-- Ordered List:Displays items in a numbered format.-->
+<ol>
+    <li>Milk</li>
+    <li>Sugar</li>
+    <li>Chapati</li>
+    <li>Water</li>
+</ol>
+
+<!-- Attributes of <ol>:
+type → Defines numbering style (1, A, a, I, i).
+start → Sets the starting number. -->
+<ol type="A" start="3">
+    <li>Maths</li>
+    <li>Science</li>
+    <li>Computer</li>
+</ol>
+
+
+<!-- Unordered List (<ul>):Displays items with bullets instead of numbers. -->
+<ul >
+    <li>Milk</li>
+    <li>Sugar</li>
+    <li>Chapati</li>
+    <li>Water</li>
+</ul>
+
+<!-- Attributes of <ul>:
+list-style-type: Controls bullet style (disc, circle, square, none). -->
+
+<ul style="list-style-type: circle;">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+</ul>
+
+<!-- Definition List (<dl>)
+Used for glossary, terms, and definitions.
+Tags:
+    <dl> → definition list container.
+    <dt> → definition term (word).
+    <dd> → definition description (meaning). 
+-->
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language, used for creating webpages.</dd>
+
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets, used for styling webpages.</dd>
+</dl>
+
+
+<!-- Nested Lists :You can put a list inside another list. -->
+<ol>
+    <li>HTML
+        <ul>
+            <li>Headings</li>
+            <li>Paragraph</li>
+            <li>Lists</li>
+            <li>Images</li>
+            <li>Anchor</li>
+        </ul>
+    </li>
+    <li>CSS
+        <ul>
+            <li>TypesOfCss
+                <ul>
+                    <li>InlineCss</li>
+                    <li>InternalCss</li>
+                    <li>ExternalCss</li>
+                </ul>
+            </li>
+            <li>BoxModel</li>
+            <li>Flexbox</li>
+            <li>Grid</li>
+        </ul>
+    </li>
+    <li>JavaScript
+        <ul>
+            <li>DataTypes</li>
+            <li>If-Else</li>
+            <li>Functions</li>
+            <li>DOM</li>
+        </ul>
+    </li>
+</ol>
+
+<!-- 
+Key Points to Remember
+
+<ol> = Ordered (numbered)
+
+<ul> = Unordered (bulleted)
+
+<dl> = Definition (term + description)
+
+Use <li> for items inside <ol> and <ul>.
+
+Lists can be nested (list inside list).
+
+Use CSS to style bullets, numbers, spacing. -->
