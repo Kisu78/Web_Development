@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            background-color: red;
+        }
+        .second{
+            background-color: rgb(68, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <!-- Class Attribute -->
+    <!-- Meaning: A label you give to elements. -->
+    <!-- Use: Apply the same CSS style or JavaScript action to many elements. -->
+    <!-- We Use a dot (.) before the class name For Style it -->
+    <!-- Example :IF we need to Apply a style to Three Differnt element So we use Class -->
+    <!-- We Can Also Use Div But imagine We have three divs div1 div2 div3
+       and we need to style 
+       div1 h1 Element 
+       div2 h2 element 
+       div3 h3 element 
+       so giving a same class
+       to this h1 h2 h3 we can center it -->
+    <div>
+        <h1 class="first">Hello</h1>
+        <!-- We Can Give Many Element to Same Class -->
+        <h2 class="first">Good</h2>
+        <!-- We Can Give One Element Multiple Class -->
+        <h3 class="second first">Morning</h3>
+    </div>
+
+
+    <!-- ID Attribute -->
+    <!-- It is A unique name for one element. -->
+    <!-- We Use It For Style And Apply js To one Particular Element -->
+    <!-- We Can Access it using # Symbol -->
+    
+    <p id="third">Hello Krishna</p>
+    <p id="Fourth">Hello Bhai Kaise ho</p>
+    <!-- We Cannot Give Same id to other element After Assign to any element -->
+    <!-- This Is wrong -->
+    <!-- <p id="third">Ha Acha hu</p> -->
+
+    <!-- If you apply the same id to multiple elements, 
+     CSS will style all of them, but JavaScript will only pick the first one, 
+     and your HTML won’t be valid,Screen readers and search engines may get confused. -->
+
+
+</body>
+</html>

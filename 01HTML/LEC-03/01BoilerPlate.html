@@ -1,0 +1,113 @@
+<!-- A boilerplate in HTML means the basic standard code template that is used at the start of every HTML document. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a sample HTML boilerplate">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- 1. <!DOCTYPE html>
+    Purpose: Tells the browser which version of HTML is used.
+    Here, <!DOCTYPE html> means HTML5.
+    Without it, browsers may use quirks mode, rendering inconsistently. 
+-->
+
+<!--    
+2. <html lang="en">
+    It is a Root element: Everything goes inside <html>...</html>.
+    Attribute:
+        lang="en" → Declares the language Of the Document(English). 
+        Helps SEO and screen readers.
+ -->
+
+<!-- 
+3. <head> ... </head>
+    Contains metadata (information about the page, not shown directly).
+        Common elements inside <head>:
+
+        <meta charset="UTF-8">
+        Sets character encoding to UTF-8.
+        Supports almost all languages, symbols, and emojis.
+        Without it, special characters may display incorrectly.
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            Use:Makes page responsive on mobile devices.
+            width=device-width → Matches the screen width of the device (mobile, tablet, desktop).
+            initial-scale=1.0 → Sets zoom level to 100% by default(Defulat zoom level)
+
+        <meta name="description" content="...">
+            Short description of the page.
+            Used by search engines (SEO).
+
+        <title>My Website</title>
+            Title shown in the browser tab.
+            Very important for SEO.
+
+        <link rel="stylesheet" href="style.css">
+            Connects an external CSS file.
+            Attributes: rel="stylesheet" → It Describe a Relationship that is a stylesheet.
+                        href="./style.css" → Path to CSS file.
+        -->
+
+
+<!-- 4. <body> ... </body>
+    Main content visible to users.
+    Includes text, images, links, forms, etc. 
+-->
+
+
+<!-- 
+5. <script src="./script.js"></script>
+    Links an external JavaScript file.
+    Attributes:src="script.js" → Path to JS file.
+    Placement:At end of body → Better performance (script loads after HTML).
+ -->
+
+
+<!-- 
+If We Don’t Use It
+
+<!DOCTYPE html> → Browser may switch to quirks mode, and page may look broken or old-style.
+
+<html lang="en"> → Page still works, but screen readers and Google SEO may not understand language.
+
+<head> → Without it, you can’t add metadata, styles, or scripts properly.
+
+<meta charset="UTF-8"> → Some symbols, emojis, or non-English letters may show as weird boxes/???.
+
+<meta name="viewport" ...> → Page will look zoomed out or tiny on mobile phones.
+
+<meta name="description" ...> → Search engines won’t know what your page is about → bad SEO ranking.
+
+<title> → Browser tab will just say “Untitled”.
+
+<link rel="stylesheet" ...> → No external CSS, so page looks plain black-and-white.
+
+<body> → You cannot show any real content; nothing will appear.
+
+<script src="..."> → Your JavaScript won’t run, so page won’t have interactivity. 
+
+-->
+    
+
+
+
+<!-- Main Point if We dont use BoilerPlate so Browser Automatic Write Our Content into BoilerPlate
+    But But this is not correct HTML. Some browsers or tools may not handle it properly 
+-->
+<!-- 
+Why <body> is needed?
+    Keeps code organized → everything visible goes in one place.
+    Required for valid HTML (W3C standards).
+    Some scripts and CSS only work properly if content is inside <body> 
+-->

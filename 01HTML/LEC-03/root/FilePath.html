@@ -1,0 +1,43 @@
+<img src="./Alpha/dog.jpeg" height="200px" alt="dog image" height="300px" width="250px">
+<img src="./cat.webp" alt="Cat Image" height="300px" width="200px">
+
+
+<!-- Relative Path :Means A path relative to the current file’s location.-->
+<!-- 👉 Relative path is like giving directions based on where you already are. -->
+<!-- Real World Example:
+     Like if i Am living in Ahembadad and someone ask to me give location of bus stand 
+     so i say to him go to maninagar then go to isanpur then go to kalupur then your station come -->
+
+<!--This Is Work Beacuse I access a my Folder file not a System Files  -->
+<img src="./Alpha/Beta/Cow.jpg" alt="This is Cow Image" height="300px" width="250px">
+<!-- This is not Work Beacuse i access a my System file ,so browser block this access
+ Beacuse we dont like to give permission to our files to access it  -->
+<img src="../../../../../../Pictures/Screenshots/Screenshot 2024-09-15 091054.png" alt="The Image is not Load">
+
+
+<!--******************* Why Relative URL Cannot Go Beyond Your Folder into System Files ************* -->
+
+<!-- Relative paths (../) only move inside your project folder structure. -->
+<!-- When you try to go outside (beyond project root) → the browser blocks it for security reasons. -->
+<!-- 👉 Browser will not allow it because:
+    Security: Websites are sandboxed. They cannot read your system files (Windows, C drive, etc.), otherwise any site could steal your personal data.
+    Project Root: Browsers treat your project folder as the root, so ../ beyond that is ignored or blocked. -->
+
+
+
+
+
+
+<!-- Absolute Path :A complete path from the root (or full URL).
+    Does not depend on HTML file location.-->
+<!-- Absolute path is like giving the complete address from the very beginning. -->
+<!-- Real World Example:
+        Like if i Am living in Ahembadad and someone ask to me give location of bus stand 
+        so i Say him to go Earth then go to india in gujrat state go to ahemdabad then go to maniagar then your bus stand is come -->
+
+<!-- This Will not Work Beacuse We Dont like to Give Access to Browser to Access our files -->
+<img src="C:\Users\hp5cd\OneDrive\Desktop\Consistant\01HTML" alt="Not Work">
+
+<!-- It works everywhere because the file is hosted on the internet and accessible to everyone. -->
+<img src="https://www.company.com/images/logo.png" alt="Company Logo">
+
