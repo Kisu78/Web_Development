@@ -1,0 +1,141 @@
+<!-- Form In Html -->
+<!-- The <form> element is used to collect user input and send it to a server for processing -->
+<!-- We Use Form in login,Register,Contact Form etc -->
+
+
+<!-- Input Tag Attribute -->
+<!-- | Attribute        | Description                                          | Example                                                                                                     |
+| ---------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **type**         | Defines the kind of input control.                   | `"text"`, `"password"`, `"email"`, `"file"`, `"checkbox"`, `"radio"`, `"submit"`, `"number"`, `"date"` etc. |
+| **name**         | Name of the input (used as key when sending data).   | `"username"`                                                                                                |
+| **id**           | Unique identifier for styling/JavaScript.            | `"userId"`                                                                                                  |
+| **class**        | CSS styling class.                                   | `"input-style"`                                                                                             |
+| **value**        | Default value of the input.                          | `"Krishna"`                                                                                                 |
+| **placeholder**  | Hint text shown inside the input box.                | `"Enter username"`                                                                                          |
+| **required**     | Makes the field mandatory.                           | `required`                                                                                                  |
+| **readonly**     | Makes input uneditable (but value can be submitted). | `readonly`                                                                                                  |
+| **disabled**     | Disables input (cannot be edited or submitted).      | `disabled`                                                                                                  |
+| **maxlength**    | Maximum number of characters.                        | `"20"`                                                                                                      |
+| **min / max**    | Range for numeric/date input.                        | `min="18" max="60"`                                                                                         |
+| **step**         | Step size for numbers/dates.                          Accepts values like 0, 5, 10, 15...                       | `step="5"`                                                                                                  |
+| **size**         | Visible width of input (in characters).              | `"30"`                                                                                                      |
+| **checked**      | Default state for checkboxes/radio buttons.          | `checked`                                                                                                   |
+| **multiple**     | Allows multiple file selection or multiple emails.   | `multiple`                                                                                                  |
+| **pattern**      | Regex pattern for input validation.                  | `pattern="[0-9]{10}"`                                                                                       |
+| **autofocus**    | Automatically focuses input when page loads.         | `autofocus`                                                                                                 |
+| **list**         | Connects to `<datalist>` for suggestions.            | `list="cities"`                                                                                             |
+| **accept**       | Restricts allowed file types in file input.          | `accept=".jpg,.png"`                                                                                        |
+| **autocomplete** | Enables/disables browser autocomplete.               | `"on"`, `"off"`                                                                                             | -->
+
+
+<!-- Key Point:Without name, the field’s value won’t be submitted. -->
+<!-- If We dont use name attribute the data is not sent to backend or databse 
+ Example when you use name="fname" so in fname krishna is go ,
+ krishna come from input tag -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+
+    <form>
+
+    <!-- Text input -->
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" class="input-style" 
+           placeholder="Enter your name" maxlength="20" required autofocus>
+    <br>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required>
+    <br>
+
+    <!-- Phone -->
+    <label for="phone">Phone Number:</label>
+    <input type="tel" name="tel" id="phone" required>
+    <br>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" autocomplete="on" placeholder="you@example.com">
+    <br>
+
+    <!-- Number -->
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" min="18" max="60" step="1">
+    <br>
+
+    <!-- Date -->
+    <label for="dob">Birthday:</label>
+    <input type="date" name="dob" id="dob">
+    <br>
+
+    <!-- Radio -->
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male" value="male" checked>
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <br>
+
+    <!-- Checkbox -->
+    <label for="subscribe">Subscribe to newsletter</label>
+    <input type="checkbox" name="subscribe" id="subscribe" value="yes" checked>
+    <br>
+
+    <!-- File Upload -->
+    <label for="profilePic">Upload File:</label>
+    <input type="file" name="profilePic" id="profilePic" accept=".jpg,.png" multiple>
+    <br>
+
+    <!-- Color Picker -->
+    <label for="favColor">Favorite Color:</label>
+    <input type="color" name="favColor" id="favColor">
+    <br>
+
+    <!-- Range -->
+    <label for="volume">Volume:</label>
+    <input type="range" name="volume" id="volume" min="0" max="100" step="10">
+    <br>
+
+    <!-- Search -->
+    <label for="searchBox">Search:</label>
+    <input type="search" name="searchBox" id="searchBox" placeholder="Search here...">
+    <br>
+
+    <!-- Datalist -->
+    <label for="city">City:</label>
+    <input type="text" name="city" id="city" list="cities">
+    <!-- list="cities" connects the input box to the <datalist> with id="cities". -->
+    <datalist id="cities">
+      <option value="Mumbai">
+      <option value="Delhi">
+      <option value="Ahmedabad">
+      <option value="Bangalore">
+    </datalist>
+    <br>
+
+    <!-- Hidden -->
+    <input type="hidden" name="userID" value="12345">
+
+    <!-- Submit & Reset -->
+    <!-- <input type="submit"> → plain submit button with text from value Means it give Submit Button iF we change submit to register use value attribute and here we need to use type="submit" -->
+    <!-- <button type="submit"> → customizable submit button that can contain text, HTML, or icons Means We can customize it beacuse it have opening and closing tag and button have defalu type is submit-->
+    
+    <br>
+    <input type="submit" value="Submit Form">
+    <button type="submit">Submit</button>
+    <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
+
+<!-- When Click Submit What happend -->
+<!-- User fills form → Browser collects name=value pair→ Encodes data (GET/POST) → Sends to server (action)
+       → Server processes → Sends response back. -->
+

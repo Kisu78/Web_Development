@@ -1,0 +1,16 @@
+<!-- Regular Expressions are used to define patterns for matching text. -->
+<form>
+  <!-- Phone number: exactly 10 digits -->
+  <label>Phone Number:
+    <input type="text" name="phone" pattern="[0-9]{10}" 
+           placeholder="Enter 10-digit number" required>
+  </label>
+
+  <label>Email:
+    <input type="email" name="email" 
+           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" 
+           placeholder="example@email.com" required>
+  </label>
+  <input type="submit" value="Submit">
+
+</form>

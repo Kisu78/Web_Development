@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Job Application:Senior Web Developer</h1>
+        <p>Thank You For your Interest in Joining our team.please fill out the application below.</p>
+        <hr>
+
+        <h2>Personal information</h2>
+        <label for="fname">Full Name:</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter Your Full Name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required placeholder="Enter Your EMail">
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number">
+        <br><br>
+
+        <label for="LPU">Linkedin Profile URL:</label>
+        <input type="url" name="LinkedinURl" id="LPU">
+        <br><br>
+
+        <hr>
+        <h2>Professioal Experience</h2>
+        <label for="resume">Upload Your Resume(PDF)</label>
+        <br>
+        <input type="file" name="Resume" id="resume">
+        <br><br>
+
+        <label for="Letter">Cover Letter</label>
+        <br>
+        <textarea name="letter" id="letter" placeholder="tell use why you are a greate fit for this role..." rows="10"></textarea>
+        <br><br>
+        <label for="Experience">Years of professional Experience:</label>
+        <br>
+        <input type="number" name="Experience" id="Experience" min="0">
+        <br><br>
+
+        <label for="PossDate">Earliest Possible Start Date:</label>
+        <br>
+        <input type="date" name="EarlyDate" id="PossDate">
+        <br><hr>
+
+        <h2>Skills & Availability</h2>
+        <label>Primary Skillset(Choose One)</label>
+        <br>
+        <input type="radio" name="Skillset" id="FD" value="Frontend Development">
+        <label for="FD">Frontend Development</label>
+        <br>
+
+        <input type="radio" name="Skillset" id="BD" value="Backend Development">
+        <label for="BD">Backend Development</label>
+        <br>
+
+        <input type="radio" name="Skillset" id="FullDev" value="FullStack Development">
+        <label for="FullDev">FullStack Development</label>
+        <br><br>
+
+        <label>Additional Skills(Select all That Apply)</label>
+        <br>
+        <input type="checkbox" name="AddSKills" id="AddSKills" value="React">
+        <label for="AddSKills">React</label>
+        <br>
+
+        <input type="checkbox" name="AddSKills" id="Node.js" value="Node.js">
+        <label for="Node.js">Node.js</label>
+        <br>
+
+        <input type="checkbox" name="AddSKills" id="DBMS" value="DBMS">
+        <label for="DBMS">DBMS</label>
+        <br>
+
+        <input type="checkbox" name="AddSKills" id="Cloud/Devops" value="Cloud/Devops">
+        <label for="Cloud/Devops">Cloud/Devops</label>
+        <br><br>
+
+        <label for="Work">Preferred Work Type:</label>
+        <select name="WorkType" id="Work">
+            <option value="Full-Time">Full-Time</option>
+            <option value="Part-Time">Part-Time</option>
+        </select>
+        <hr>
+
+        <h2>Final Confirmation</h2>
+        <input type="checkbox" name="Agree" id="Agree" value="I am leagally Authorized to work in this Country">
+        <label for="Agree">I am leagally Authorized to work in this Country</label>
+        <br><br>
+
+        <label for="Hear">How did you hear About us?</label>
+        <input type="text" id="Hear" name="Hear Company">
+        <br><br>
+
+        <button>Submit</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+</body>
+</html>
+
+<!-- AFter Submit This Data Go in URl WhatEver Data go -->
+<!-- http://127.0.0.1:5500/01HTML/LEC-04/04FormHW.html?fname=Krishna+prajapati&email=japanserver56%40gmail.com&phone=1234567891&LinkedinURl=https%3Awww.hello%40gmail.com&Resume=06Table.html&letter=Hello&Experience=1&EarlyDate=2025-09-25&SkillSet=Frontend+Development&AddSKills=Node.js&AddSKills=Cloud%2FDevops&WorkType=Full-Time&Agree=I+am+leagally+Authorized+to+work+in+this+Country&Hear+Company=Hello -->

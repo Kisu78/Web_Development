@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>University Registration Form</h1>
+        <p>Please fill out the form below to register</p>
+    </header>
+    <hr>
+    <main>
+        <h2>Personal Details</h2>
+        <form>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter Your First Name">
+            <br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name">
+            <br><br>
+
+            <label for="DOB">Date Of Birth:</label>
+            <input type="date" name="DOB" id="DOB">
+            <br><br>
+
+            <label for="gender">Gender:</label>
+            <br>
+            <input type="radio" name="gender" id="Male" value="Male">
+            <label for="Male">Male</label>
+            <br>
+            <input type="radio" name="gender" id="Female" value="Female">
+            <label for="Female">Female</label>
+            <br>
+            <input type="radio" name="gender" id="Other" value="Other">
+            <label for="Other">Others</label>
+            <br>
+
+            <label for="Upload">Upload Your Photo:</label>
+            <br>
+            <input type="file" name="UFile" id="Upload">
+            
+            <hr>
+            <h2>Contact Information</h2>
+
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="Hello@example.com">
+            <br><br>
+
+            <label for="PN">Phone Number:</label>
+            <input type="tel" name="PN" id="PN" placeholder="Enter Your Mobile Number">
+            <br><br>
+
+            <label for="Address">Address:</label>
+            <br>
+            <textarea name="Address" id="Address" placeholder="Enter Your Home Address" rows="4"></textarea>
+
+            <hr>
+            <h2>Academic Information</h2>
+       
+            <label for="Course">Select Your Course:</label>
+            <br> 
+            <select name="Course" id="course">
+                <option value="" selected disabled>Choose a Course</option>
+                <option value="IT">IT</option>
+                <option value="CS">CS</option>
+                <option value="CSE">CS</option>
+                <option value="AI_ML">AI_ML</option>
+            </select>
+            <br><br>
+
+            <label>Extracurricular Interests:</label>
+            <br>
+            <input type="checkbox" name="EI" id="sport" value="Sports">
+            <label for="sport">Sports</label>
+            <br>
+            <input type="checkbox" name="EI" id="M&A" value="Music & Arts">
+            <label for="M&A">Music & Arts</label>
+            <br>
+            <input type="checkbox" name="EI" id="Technolgy" value="Technology Clubs">
+            <label for="Technolgy">Technology Clubs</label>
+
+            <br>
+            <input type="checkbox" name="EI" id="Volunteering" value="Volunteering">
+            <label for="Volunteering">Volunteering</label>
+            <br>       
+        
+            <hr>
+            <h2>Create Your Account</h2>
+       
+            <label for="pass">Create a PassWord:</label>
+            <input type="password" name="pass" id="pass">
+            <br><br>
+
+            <label for="SQ">Security Question:</label>
+            <select name="SQ" id="SQ">
+                <option value="What Was your First pet's name?">What Was your First pet's name?</option>
+            </select>
+            <br><br>
+            
+            <input type="checkbox" name="Agree" id="Agree" value="I Agree to the Terms and Condition">
+            <label for="Agree">I Agree to the Terms and Condition</label>
+            <hr>
+            <button>Register</button>
+            <input type="reset" value="Clear Form">
+        </form>
+
+    </main>
+    <hr>
+
+    <footer>
+        <p>All Copy Write &copy;2024</p>
+    </footer>
+</body>
+</html>
