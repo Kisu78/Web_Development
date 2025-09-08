@@ -1,0 +1,67 @@
+<!-- 1. <audio> Tag: The <audio> tag is used to embed sound content (music, podcasts, sound effects) in a webpage. -->
+<!-- Attributes: -->
+    <!-- src → Path of audio file.
+    controls → Adds play, pause, volume controls.
+    autoplay → Audio starts automatically (not recommended without user consent).
+    loop → Replays the audio continuously.
+    muted → Starts the audio muted
+    preload → Hints how browser should load audio (auto, metadata, none). -->
+
+
+<!-- 2. <video> Tag:The <video> tag is used to embed video content in a webpage. -->
+
+<!-- Attributes: -->
+    <!-- src → Path of video file. -->
+    <!-- controls → Adds play, pause, volume, fullscreen. -->
+    <!-- autoplay → Starts video automatically. -->
+    <!-- loop → Replays the video continuously. -->
+    <!-- muted → Starts muted (often required with autoplay). -->
+    <!-- poster → Displays an image before video plays. -->
+    <!-- width / height → Dimensions of video. -->
+
+<!-- 3. <iframe> Tag:The <iframe> (inline frame) is used to embed another HTML document (webpage, video, map, etc.) inside the current page. -->
+<!-- Attributes: -->
+    <!-- src → URL of the embedded page. -->
+    <!-- width / height → Size of the frame. -->
+    <!-- name → Assigns a name to the frame. -->
+    <!-- frameborder → Border around iframe (0 or 1). -->
+    <!-- allowfullscreen → Allows fullscreen content. -->
+    <!-- loading → Lazy loading (lazy, eager). -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- One Method For Audio and Video Embed in HTML -->
+    <!-- If We dont use controls In audio and video ,so they dont visible in live server -->
+    <audio src="./wavy.mp3" controls></audio>
+    <video src="./video.mp4" controls height="300px"></video>
+
+    <!-- Second Method For Audio And Video Embed -->
+    <!-- We Use This Method Beacuse If Some Reason First Source Video in supported or Not Played -->
+    <!-- So Other Source Video Will Play -->
+    <!-- If Nothing Source Video Will play So text is Shown -->
+    <audio controls >
+        <source src="./wavy.mp3" type="audio/mp3">
+        This Audio is Not Supported In Your Browser
+    </audio>
+
+    <video controls height="300px">
+        <source src="./video.mp4" type="video/mp4">
+        This Video is Not Supported In Your Browser
+    </video>
+
+
+    <!--iframe: For Embeding Any Website Which have permission to embed Or Youtube Video In Our Website  -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NGYp1zCBthk?si=s_aBlH1KDsAruMyM" title="YouTube video player" allowfullscreen></iframe>
+    
+    
+
+</body>
+</html>
