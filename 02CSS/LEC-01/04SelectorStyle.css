@@ -1,0 +1,95 @@
+/* Universal Selector(*): */
+/* Selects all elements on the page. */
+
+*{
+    padding:0;
+    margin: 0;
+}
+
+
+/* Element or Tag Selector */
+/* Selects elements by HTML tag name. */
+/* h1{
+    background-color: royalblue;
+}
+
+ul{
+    background-color: blueviolet;
+} */
+
+
+
+/* Id Selector */
+/* Selects element with a unique ID (#). */
+/* #first{
+    background-color: blueviolet;
+} */
+
+
+/* Class Selector */
+/* Selects elements with a class attribute (.). */
+/* .second{
+    background-color: chartreuse;
+} */
+
+
+/* Group Selector */
+/* Apply the same style to multiple selectors at once */
+/* h1,h2,h3,#first,.second{
+    background-color: cornflowerblue;
+} */
+
+/* Descendant Selector */
+/* Selects elements inside another element. */
+/* All <p> inside <div> */
+/* div > p{
+    background-color: red;   
+    
+} */
+
+/* Child Selector (>) */
+/* Selects elements that are direct children. */
+ /* Only <p> directly inside <div> */
+/* div p{
+    background-color: red;
+} */
+
+
+
+
+/* *****CSS Colors***** */
+h1{
+    /* 1.RGB Color: Stand For Red,Green,Blue 
+    We Can Make Any Color Using This Three Color Combination
+    The RGB value is 0 to 255
+    The Total Memory It take is 3 Byte */
+    background-color: rgb(209, 244, 9);
+    /* In The RGBA The A stads For Alpha.
+       Use For Transperancy Of color 0 Means invisible and 1 Means Fully Visible
+       We Can Give Any value of A Between 0 to 1 */
+    background-color: rgba(209, 244, 9,0.5);
+}
+h2{
+    /* 2.HSL Color is Stand For hue saturation lightness */
+    /* Hue (0–360°): The “color wheel ” → 0 = red, 120 = green, 240 = blue. */
+    /* Saturation (0%–100%): Intensity of color (0% = gray, 100% = full color). */
+    /* Lightness (0%–100%): Brightness Of Color (0% = black, 50% = normal, 100% = white). */
+    /* We Can Give hue Value from 0 to 360
+       We Can give Saturation And Lightness value From 0 to 100% */
+    background-color: hsl(110,50%, 80%);
+    background-color: hsla(110,50%, 80%,0.7);
+}
+
+li{
+    /* 3.Hexadecimal Color:The First Two Value is For Red,
+            Next Two Value For Green Color
+            Next Two Value For Blue Color
+            We Can Give Any Value From 0 to 9 And a to f
+            Particular One Value Take 4 bit,
+            so,Toatl It Take 24 bits So That Means It Take 3 Byte memory
+     */
+    background-color: #11ff00;
+}
+
+
+

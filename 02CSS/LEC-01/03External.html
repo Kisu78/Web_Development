@@ -1,0 +1,52 @@
+<!-- 3. External CSS -->
+<!-- Definition: CSS written in a separate .css file and linked using <link>. -->
+<!-- Scope: Can be reused across multiple pages. -->
+
+<!-- Which is Better? -->
+    <!-- Small changes in one element → Inline CSS (but not recommended in practice). -->
+    <!-- Styling for a single-page project → Internal CSS. -->
+    <!-- Large websites or multiple pages → External CSS (Best Practice). -->
+<!-- 👉 External CSS is the best because 
+ it separates design (CSS) from content (HTML), 
+ is reusable, and easier to manage. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External Css: Means We link a css file with our html document using link element inside head Element -->
+    <link rel="stylesheet" href="./03ExterStyle.css">
+</head>
+<body>
+    <h1>Gym WebSite</h1>
+
+    <h2>Excercise</h2>
+    <ul>
+        <li>Biceps</li>
+        <li>Legs</li>
+        <li>Chest</li>
+        <li>Shoulder</li>
+        <li>Triceps</li>
+        <li>Back</li>
+    </ul>
+
+    <h2>Diet</h2>
+    <ul>
+        <li>Veg:
+            <ol>
+                <li>Panner</li>
+                <li>Soya</li>
+            </ol>
+        </li>
+        <li>Non Veg:
+            <ol>
+                <li>Chicken</li>
+                <li>Mutton</li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>

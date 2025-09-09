@@ -1,0 +1,123 @@
+/* Absolute unit (e.g., px, cm, in): Fixed, does not change with screen or parent. */
+
+/* Relative unit (e.g., em, rem, %, vw, vh): Flexible, changes according to parent/root/viewport. */
+
+    /* px → A fixed size unit, not relative, where 16px always means exactly 16 screen pixels regardless of parent, root, or viewport. */
+
+    /* em → A relative unit based on the parent’s font-size, so 2em means 2 × parent’s font-size (if parent is 20px → 40px). */
+
+    /* rem → A relative unit based on the root (html) font-size, so 1rem always equals the root size (default 16px unless changed). */
+
+    /* % (percentage) → A relative unit based on the parent element’s size (e.g., 50% width means half the parent’s width). */
+
+    /* vw (viewport width) → A relative unit where 1vw = 1% of the total browser window width (e.g., viewport = 1000px → 50vw = 500px). */
+
+    /* vh (viewport height) → A relative unit where 1vh = 1% of the total browser window height (e.g., viewport = 800px → 100vh = 800px). */
+
+    
+/* 1 Px is 1/96 of an inch That is Wrons */
+/* Px is calculated Acroding to  screen size */
+h1{
+    background-color: aqua;
+    font-size: 25px;
+}
+
+/* How px And Size Of Image is Calculated */
+/* If Image Have 1920 pix Columns and 1080 px Rows And each px takes 3 bytes memory
+   So Total Size OF Image is 1920 *1080 *3 bytes = 6MB 
+   Now You Say my phone take less than or more then 6mb for photo this beacuse we compressed image 
+*/
+
+
+/* Why px is Not 1.96 of inch 
+   Prove Below : 
+        If i open a image in phone And Same image is laptop 
+        So the same image need to fit in phone 1920*1080 px 
+        And Same image need to fit in laptop 1920*1080 px
+        so Obvisloy laptop px is bigger then phone px 
+        so We cannot say image is 1/96 inch
+        
+    /* Better Explan From Chatgbt:
+        Phone Example (1920×1080 screen):
+        The screen is small (say 6 inches diagonally).
+        That means pixels are tiny and packed closely (high PPI → pixels per inch).
+
+        Laptop Example (1920×1080 screen):
+        The screen is larger (say 15 inches diagonally).
+        That means pixels are bigger (lower PPI).
+
+        👉 Both devices display 1920×1080 pixels, but the physical size of each pixel is different.
+
+        🔹 4. Proving the difference
+        Same image (1920×1080) shown on:
+        Phone (6-inch screen): Pixels are small → the image looks sharp, dense.
+        Laptop (15-inch screen): Pixels are bigger → the image looks larger, less dense.
+        So we cannot say 1px = 1/96 inch in real life, because:
+        On a phone: 1px might be 0.01 mm wide.
+        On a laptop: 1px might be 0.25 mm wide.
+        CSS keeps the logical idea of 1px = 1/96 inch so web pages look consistent, but the browser scales pixels internally depending on device. 
+
+        ✅ In short:
+        1px = 1/96 inch is true in CSS logic,
+        but in real life, 1px changes size depending on the screen density (PPI).
+*/
+
+
+h2{
+    /* em Change Size Acroding to its parent Size */
+    /* font-size: 2em; */
+
+    background-color: burlywood;
+
+    /* rem change size Acroding to Root element ,so it changes acroding to html size 
+    by Defualt html font size is 16px ,so if we apply font-size of h2 2rem so actual size is 32px  */
+    font-size: 2rem;
+
+    /* vw change size acroding to a viewport-width size*/
+    /* font-size: 3vw; */
+
+    /* vw change size acroding to a viewport-height size*/
+    /* font-size: 3vh; */
+}
+h3{
+    /* Percent Change his size acroding to parent size if parent size is 100px 
+    And if apply on h2 width is 50% so actual size is 50px */
+    width: 90%;
+    background-color: aqua;
+}
+
+
+p{
+    /* Defines the size of the text. */
+    /* Can be in px,em,rem etc. */
+    font-size:25px;
+
+    /* Defines how bold or light the text looks. */
+    /* Values: normal, bold, lighter, or numbers 100–900. */
+    font-weight: bold;
+
+    /* Defines the style of the text. */
+    /* Common values: normal, italic, oblique. */
+    font-style: italic;
+
+
+    /* Defines the typeface (the design of the letters). */
+    /* Can include multiple fonts as “fallbacks.” */
+    /* If the first font isn’t available, the browser tries the next. And if None is Avaible then by defualt All Browser have sans-serif font*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul{
+    background-color: burlywood;
+     /* Google Font Embed */
+     /* Steps:
+        Go to 👉 https://fonts.google.com
+        Select a font (e.g., Roboto).
+        Copy the link tag they provide into <head> of HTML:
+        Use it in CSS:
+     */
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+}
