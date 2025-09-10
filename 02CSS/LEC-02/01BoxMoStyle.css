@@ -1,0 +1,82 @@
+/* The CSS Box Model describes how every HTML element is structured as a rectangular box in a webpage.
+Each box is made up of 4 areas: */
+
+/* Content → The actual text, image, or element data. */
+
+/* Padding → Space between content and border (inside area). */
+
+/* Border → The edge line around content + padding. */
+
+/* Margin → Space outside the border (between elements). */
+
+h1{
+    background-color: blueviolet;
+    height: 100px;
+    width: 300px;
+
+
+    /* Box Model Border Property */
+    /* border-width: 15px;
+    border-style: solid;
+    border-color: aqua; */
+
+    /* Shorhand Of Border */
+    border: 10px solid black;
+
+    /* Use For Make a Border rounded  */
+    border-radius: 20px;
+
+
+
+    /* Box Model Padding Property */
+    /* It Give padding top ,right, bottom ,left all same  */
+    padding: 10px;
+    /* It Give padding top and bottom same and left and right same  */
+    /* padding: 10px 20px; */
+
+    /* It Give padding top, left and right same and bottom  */
+    /* padding: 10px 20px 30px; */
+
+    /* It Give padding top,right,bottom,left differant  */
+    /* padding: 10px 20px 30px 40px; */
+
+    /* We Can Give Paddding to Particular area like top right bottom left  */
+    padding-left: 30px;
+
+
+
+
+    /* Box Model Margin Property */
+    /* It Give Margin top ,right, bottom ,left all same  */
+    margin: 20px;
+
+    /* It Give Margin top and bottom same and left and right same  */
+    /* margin: 10px 20px; */
+
+    /* It Give Margin top, left and right same and bottom  */
+    /* margin:10px 20px 30px; */
+
+    /* It Give Margin top,right,bottom,left differant  */
+    /* margin:10px 20px 30px 40px */
+
+    /* We Can Give Margin to Particular area like top right bottom left  */
+    margin-bottom: 40px;
+
+    /* This Auto Value only work with margin not padding and border in box model */
+    margin: auto;  /* horizontally center a Whole Box */
+}
+
+h2{
+    background-color: chocolate;
+    border:2px solid red;
+}
+
+p{
+    background-color: green;
+    border:2px solid red;
+    padding: 15px;
+    border: 5px solid black;
+}
+
+
+

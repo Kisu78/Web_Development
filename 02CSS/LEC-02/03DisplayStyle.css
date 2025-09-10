@@ -1,0 +1,121 @@
+/* Box-Sizing:The box-sizing property defines how the browser calculates the total width and height of an element. */
+/* Values of box-sizing
+    1.content-box (Tdefault)
+    width and height apply only to the apply on content.
+    Padding and border are added on top(height and width), increasing total size of Box.
+    Example:
+    .box {
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+        border: 10px solid red;
+        box-sizing: content-box; 
+    }
+    📏 Final Calculations:
+            Content = 200px × 100px
+            Padding = 20px + 20px = 40px (left + right)
+            Border = 10px + 10px = 20px (left + right)
+            Total width = 200 + 40 + 20 = 260px
+            Total height = 100 + 40 + 20 = 160px
+            👉 The box becomes larger than you expected.
+
+
+    2.border-box
+    width and height include content + padding + border.
+    Easier for layouts since total size stays fixed.
+    Example:
+    .box {
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+        border: 10px solid red;
+        box-sizing: content-box; 
+    }
+     📏 Final Calculations:
+            Total width = 200px (fixed)
+            → Content shrinks: 200 − (20+20 padding) − (10+10 border) = 140px
+
+            Total height = 100px (fixed)
+            → Content shrinks: 100 − (20+20 padding) − (10+10 border) = 40px
+ */
+
+/* 🔑 Quick Comparison Table */
+/* | Feature            | Content-Box (Default)           | Border-Box                      |
+| ------------------ | ------------------------------- | ------------------------------- |
+| Width/Height apply | Content only                    | Content + Padding + Border      |
+| Total size         | Grows when padding/border added | Stays fixed at given size       |
+| Content area       | Fixed (does not shrink)         | Shrinks to fit padding + border |
+| Layout control     | Harder (must calculate extra)   | Easier (box stays exact size)   | */
+
+/* Why Border-Box is Better for Layouts
+    When you design flexible layouts, you don’t want padding/border to mess up total size.
+    That’s why many developers use a CSS reset:
+*/
+
+
+/* CSS Display Property  -> The display property defines how an element behaves in the page layout. */
+/* display: inline-block
+    It is Combination  of inline and  block charateris
+    Element stays inline (side by side), but you can also set:width,height,full margin and padding(All Side Apply TOP RIGHT BOTTOM LEFT) 
+*/
+
+
+h1{
+    box-sizing: border-box;
+    height: 100px;
+    width: 300px;
+    background-color: red;
+    padding:20px;
+    margin:20px;
+    border: 2px solid black;
+}
+
+h2{
+    box-sizing: content-box;
+    height: 100px;
+    width: 300px;
+    background-color: red;
+    padding:20px;
+    margin:20px;
+    border: 2px solid black;
+}
+h3{
+    /* Now Using This Block Level Element Work As a Inline level Element
+       So If We give height and width that Dont Work 
+       And Margin and padding apply Horzionally
+    */
+    display: inline;
+    /* height: 100px; */
+    /* width: 300px; */
+    color: red;
+    padding:20px;
+    margin:20px;
+    border: 5px solid black;
+}
+
+span{
+    /* Now The Using this inline level Element Work As a Block Level Element 
+        We can Give height width margin padding on it And Work It For All Sides 
+        */
+    display:block;
+    background-color: green;
+    height: 50px;
+    width: 100px;
+    margin: 20px;
+    padding: 5px;
+    border: 5px solid black;
+}
+
+p{
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid black;
+    margin:10px;
+    /* Now Using This It Having Both Property Of inline and block element
+       If space Available then it go side by side and we can apply height width margin padding all side and it actually work */
+    display: inline-block;
+    background-color: rgb(159, 224, 8);
+}
+
+

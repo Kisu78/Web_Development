@@ -1,0 +1,59 @@
+/* Inline And Block Level Element */
+ /* 1. Block Elements */
+/* Always start on a new line. */
+/* Take up the full width available (stretch across the container), even if content is small. */
+/* Can contain other block and inline elements. */
+/* You can set width, height, margin, padding normally. */
+/* Example: <div>, <p>, <h1> to <h6>, <section>, <article>, <header>, <footer>, <ul>, <ol>, <li>, <form> */
+
+/* 2. Inline Elements */
+/* Do not start on a new line. */
+/* Only take up as much width as their content needs. */
+/* They can sit side by side with other inline elements. */
+/* You cannot set width and height directly (they shrink to content). */
+/* Margins and paddings work only horizontally (left/right), not vertically. */
+/* Exmaple: <span>, <a>, <strong>, <em>, <b>, <i>, <u>, <img>, <label>, <small>, <mark> */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    background-color: red;
+    padding: 30px;
+}
+span{
+    background-color: green;
+    height: 10px;
+    width: 30px;
+    margin: 20px;
+    padding: 5px;
+    border: 5px solid black;
+
+    /* When We Give padding to inline element like span then padding apply to all sides 
+       But It only a Visual effect not really padding apply 
+       For Prove
+        If We Give padding to Block level then content is move
+        but in line content is not move and stay at their location */
+
+    /* For Better Ans ChatGBT
+        Because the background color paints the content + padding box, so when you add padding (all sides) on an inline element, the background extends with it.
+        👉 But for margin:
+        Left/Right margin works normally.
+        Top/Bottom margin exists but has no visual effect (it doesn’t push lines apart).
+    */
+}
+
+/* 
+🔑 Quick Comparison Table
+| Feature        | Block Elements          | Inline Elements                            |
+| -------------- | ----------------------- | ------------------------------------------ |
+| New line?      | Yes (start on new line) | No (stay in same line)                     |
+| Width          | Full width of container | Only as wide as content                    |
+| Height         | Can set with CSS        | Depends on content (can’t set directly)    |
+| Margin/Padding | Works all sides         | Works left/right only (top/bottom limited) |
+| Examples       | `<div>`, `<p>`, `<h1>`  | `<span>`, `<a>`, `<img>`                   |
+ */
+
