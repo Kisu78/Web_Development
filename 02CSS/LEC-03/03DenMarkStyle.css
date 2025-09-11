@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(1, 1, 1);
+}
+
+#container{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(235, 224, 224);
+    position: relative;
+    margin: auto;
+}
+
+#circle{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(161, 9, 9);
+    border-radius: 50%;
+    position: absolute;
+    top:50px;
+    left:100px;
+}

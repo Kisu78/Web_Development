@@ -1,0 +1,72 @@
+
+
+/* position property controls how elements are placed on the page.
+ relative to the normal flow, their parent, or the viewport.
+
+1. static (Default)
+    This is the default value.
+    The element is positioned normally in the document flow (top to bottom).
+    No effect from top, left, right, or bottom. 
+2. relative
+    The element stays in the normal flow, but you can move it using top, left, right, or bottom.
+    The space it originally occupied is still reserved.
+3. absolute
+    The element is removed from the normal flow.
+    It’s positioned relative to the nearest positioned ancestor (an ancestor with position: relative, absolute, or fixed).
+    If none found, it positions relative to the <html> or body.
+4. fixed
+    Removed from the normal flow.
+    Always positioned relative to the viewport (browser window).
+    Does not move when you scroll.  
+5. sticky
+    Acts like relative until a scroll threshold is met, then behaves like fixed.
+    Sticks to a position while scrolling, relative to its parent container.
+*/
+
+
+h1{
+    background-color: rgba(8, 236, 69, 0.744);
+     /* In Relative it change place from Original Position */
+    /* Iska Original Space pe koi nhi aa sakta agar box move karega */         
+    /* position: relative;
+    left:50px;
+    top:10px; */
+}
+
+h2{
+    background-color: blueviolet;
+    
+    /* In Sticky it does not leave his Original Space and it fixed until the new block not comming */
+    /* We Can apply top bottom left right but most of use top  if we dont apply top it does not woek*/
+    /* Like two div elemeent if first block div element box2 is sticky then it show until the second div come */
+    /* position: sticky;
+    top:20px; */
+}
+
+h3{
+    background-color: red;
+    /* It changes Positions From Viewport and it leave his space */
+    /*  after apply fixed it does not change his postion when scrolling*/
+    /* position: fixed;
+    top: 0px;
+    left: 45px; */
+}
+
+h4{
+    background-color: crimson;
+
+    /* It Changes Position from Relative to viewport if nothing position mentioned in his parent 
+    and if mentioned then chenges accroding to parent position */
+    /* It Leave his Space and another box come in his place  */
+    position: absolute;
+    top:0px;
+
+    /* The z-index property controls the stacking order of elements on a web page. */
+    /* It Work On Only position: relative/absolute/fixed/sticky. */
+    /* By Defualt z index is zero */
+    /* Higher z-index = on top, lower = behind. */
+    /* If same z-index, later HTML element wins. */
+    /* New stacking context forms when parent has z-index, opacity < 1, transform, etc. */
+    z-index: 3;
+}
+

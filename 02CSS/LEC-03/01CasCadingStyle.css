@@ -1,0 +1,63 @@
+/* Most Priority Given To inline > Internal > External 
+    If We Apply All On One Element */
+/* If We Two CSS Internal and External(Both Having a Same Priority) on same Element So  */
+/* That CSS Apply Which Will Come First Means Ordering
+    Ex:If Internal Css(Style tag Come First) And After external so external Will Apply
+       If External Css Come First Then internal Css Come So internal css Will Apply
+       That Both Override The Existant propery
+       Like h1 Have color red in internal And blue in external 
+       And order is first internal then external so external override the internal Property
+ */
+
+
+h1{
+    background-color: blue;
+}
+
+
+/* ID Having a High Propert >Class> Element */
+.first{
+    background-color: brown;
+}
+
+#second{
+    background-color: rgb(207, 38, 38);
+}
+
+h2{
+    background-color: darkgreen;
+}
+/* If We Apply Style on same element like above h2 and below h2 having a background color darkgreen and red
+   So red overide a darkgreen color means who come last that will apply on element */
+h2{
+    background-color: red;
+}
+
+
+/* The Most Priority is given to !important That is Final 
+    Like Below We Change h3 bg but it not change Beacuse we Use Important On h3 bg Previous
+    So darkcyan dont override rosybrown.*/
+h3{
+    background-color: rosybrown !important;
+}
+
+h3{
+    background-color: darkcyan;
+}
+
+/* Must Know */
+/* If i Use Internal css and style h1 color blue and and in external css i access same h1 using id
+    Then id color will Apply Beacuse id Have more priority then tag  */
+
+
+    
+/* 
+📝 Summary of Cascading Rules
+
+!important overrides everything.
+
+If no !important, then specificity decides (Inline > ID > Class > Element).
+
+If specificity is equal, the last rule written wins.
+
+Inline > Internal/External CSS > Browser defaults. */
